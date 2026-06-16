@@ -34,7 +34,7 @@ During development, the original design based on tunnel interfaces (EoIP and Wir
 
 
 ## Key Features
-Multi-site enterprise topology.
+* Multi-site enterprise topology.
 
 * Dynamic routing using OSPF.
 
