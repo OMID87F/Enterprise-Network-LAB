@@ -1,5 +1,5 @@
-# 🔹پیاده‌سازی شبکه‌ی اداری - همراه با روتینگ داینامیک
-## 🔹محیط کار و توپولوژی
+# 🔻پیاده‌سازی شبکه‌ی اداری - همراه با روتینگ داینامیک
+## 🔹🔹محیط کار و توپولوژی
 ![](Topology.png)
 
 - **GNS3**⬆️
@@ -14,32 +14,32 @@
 
 - با **استفاده از** موارد زیر، شبکه و ارتباط بین شعب رو برای یک شرکت فراهم می‌کنیم؛ 
 	
-- 🔹اقدامات **Switch**ها:
-	- 🔸اقدامات **کلی**:
+- اقدامات **Switch**ها:
+	- اقدامات **کلی**:
 		1. تعریف`VLAN`ها✅
 			
-	- 🔸اقدامات **امنیتی**:
+	- اقدامات **امنیتی**:
 		1. راه‌اندازی`DHCP Snooping`✅
 		2. راه‌اندازی`Port Security`روی`Core`ها✅
 			
-	- 🔸اقدامات **پشتیبانی**:
+	- اقدامات **پشتیبانی**:
 		1. راه‌اندازی`SSH`✅
 		
 		
-- 🔹اقدامات **Router**ها:
-	🔸اقدامات **کلی**:
+- اقدامات **Router**ها:
+	اقدامات **کلی**:
 		1. تعریفVLAN`ها✅
 		2. راه‌اندازی`DHCP Server`✅
 		3. تنظیم`Src-NAT`✅
 		4. تنظیم`Default Route`✅
 			
-	🔸اقدامات **امنیتی** و **سیاستی**:
+	اقدامات **امنیتی** و **سیاستی**:
 		1. بستن`IP Service`ها✅
 		2. بستن`SSH`/`WinBox`از`VLAN`های غیرADMIN✅
 		3. تعریف`Src-NAT`بدون`CCTV VLAN`✅
 		4. تعریف`Simple Queue`برای`VLAN`ها✅
 			
-	🔸اقدامات **روتینگ**:
+	اقدامات **روتینگ**:
 		1. راه‌اندازی`EoIP Tunnel`بین`R1`و`R2`✅‼️(انجام شد ولی لغو کردم)
 		2. راه‌اندازی`Wiregurad`بین`R1`و`R3`✅‼️(انجام شد ولی لغو کردم)
 		3. راه‌اندازی`OSPF`روی`Wiregurad`و`EoIP Tunnel`✅❌(انجام شد ولی مشکل داشت)
@@ -104,24 +104,24 @@ CoreX(config-vlan): name Manage
 3. تنظیم`Default Route`⬆️
 
 
-###### 🛑FAILD⬇️
+###### 🔸🛑FAILD⬇️
 ![[Routers - EoIP Tunnel - R1 & R2.png]]
 ![[Routers - EoIP Tunnel - IP Addresses.png]]
 4. راه‌اندازی`EoIP Tunnel`بین`R1`و`R2`؛ و تنظیم`IP Address`روشون⬆️
 
-###### 🛑FAILD⬇️
+###### 🔸🛑FAILD⬇️
 ![[Routers - WireGuard - R1 & R3.png]]
 ![[Routers - WireGuard - IP Addresses.png]]
 5. راه‌اندازی`Wireguard`بین`R1`و`R3`؛ و تنظیم`IP Address`روشون⬆️
 
-###### 🛑FAILD⬇️
+###### 🔸🛑FAILD⬇️
 ![[Routers - OSPF - R1.png]]
 ![[Routers - OSPF - R2.png]]
 ![[Routers - OSPF - R3.png]]
 6. راه‌اندازی`OSPF`⬆️
 
 
-###### ✅INSTEAD of FAILDs⬇️
+###### 🔸✅INSTEAD of FAILDs⬇️
 ![[Routers - OSPF (Wired) - (1).png]]
 ![[Routers - OSPF (Wired) - (2).png]]
 ![[Routers - OSPF (Wired) - (3).png]]
