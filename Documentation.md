@@ -1,7 +1,6 @@
 # 🔻پیاده‌سازی شبکه‌ی اداری * همراه با روتینگ داینامیک
 ## 🔹محیط کار و توپولوژی
 ![](Topology.png)
-
 **GNS3**⬆️
 
 
@@ -51,8 +50,7 @@
 
 ## 🔹اقدامات و کانفیگ‌ها
 ### 🔸سوئیچ‌های`SW`
-![[SWs - VLANs & Access Ports.png]]
-1. تعریف `VLAN`ها و اضافه کردن`Port`های`Access`⬆️
+![SWs - VLANs & Access Ports](Sources/SWs%20-%20VLANs%20%26%20Access%20Ports.png)Port`های`Access`⬆️
 
 
 ![[SWs - Mange VLAN & Trunk Port.png]]
