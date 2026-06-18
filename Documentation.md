@@ -53,7 +53,7 @@
 ## 🔹اقدامات و کانفیگ‌ها
 ### 🔸سوئیچ‌های`SW`
 ![SWs - VLANs & Access Ports](Sources/SWs%20-%20VLANs%20%26%20Access%20Ports.png)
-1. تعریف Port`های`Access`⬆️
+1. تعریف Portهای`Access`⬆️
 
 
 ![SWs - Mange VLAN & Trunk Port](Sources/SWs%20-%20Manage%20VLAN%20%26%20Trunk%20Port.png)
