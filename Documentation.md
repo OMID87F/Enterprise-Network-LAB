@@ -50,10 +50,11 @@
 
 ## 🔹اقدامات و کانفیگ‌ها
 ### 🔸سوئیچ‌های`SW`
-![SWs - VLANs & Access Ports](Sources/SWs%20-%20VLANs%20%26%20Access%20Ports.png)Port`های`Access`⬆️
+![SWs - VLANs & Access Ports](SWs%20-%20VLANs%20%26%20Access%20Ports.png)
+1. تعریف Port`های`Access`⬆️
 
 
-![[SWs - Mange VLAN & Trunk Port.png]]
+![SWs - Mange VLAN & Trunk Port](SWs%20-%20Manage%20VLAN%20%26%20Trunk%20Port.png)
 2. ساخت `Mange VLAN`ها و تنظیم `Trunk Port`⬆️
 
 
