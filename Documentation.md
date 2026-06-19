@@ -139,7 +139,7 @@ CoreX(config-vlan): name Manage
 
 ![Routers - Address List & Filter Rule](Sources/Routers%20-%20Address%20List%20%26%20Filter%20Rule.png)
 
-5. تعریف`Address List`ها و تنظیم`Filter Rule`برای`SSH`/`Winbox`⬆️
+6. تعریف`Address List`ها و تنظیم`Filter Rule`برای`SSH`/`Winbox`⬆️
 
 ![Routers - NAT (Except CCTV)](Sources/Routers%20-%20NAT%20%28Except%20CCTV%29.png)
 
