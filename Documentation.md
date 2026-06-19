@@ -17,33 +17,33 @@
 	
 * اقدامات **Switch**ها:
 	* اقدامات **کلی**:
-		1. تعریف`VLAN`ها✅
+	1- تعریف`VLAN`ها✅
 			
 	* اقدامات **امنیتی**:
-		1. راه‌اندازی`DHCP Snooping`✅
-		2. راه‌اندازی`Port Security`روی`Core`ها✅
+		1- راه‌اندازی`DHCP Snooping`✅
+		2- راه‌اندازی`Port Security`روی`Core`ها✅
 			
 	* اقدامات **پشتیبانی**:
-		1. راه‌اندازی`SSH`✅
+	  1- راه‌اندازی`SSH`✅
 		
 		
 * اقدامات **Router**ها:
 	* اقدامات **کلی**:
-		1. تعریفVLAN`ها✅
-		2. راه‌اندازی`DHCP Server`✅
-		3. تنظیم`Src-NAT`✅
-		4. تنظیم`Default Route`✅
+		1- تعریفVLAN`ها✅
+		2- راه‌اندازی`DHCP Server`✅
+		3- تنظیم`Src-NAT`✅
+		4- تنظیم`Default Route`✅
 			
 	* اقدامات **امنیتی** و **سیاستی**:
-		1. بستن`IP Service`ها✅
-		2. بستن`SSH`/`WinBox`از`VLAN`های غیرADMIN✅
-		3. تعریف`Src-NAT`بدون`CCTV VLAN`✅
-		4. تعریف`Simple Queue`برای`VLAN`ها✅
+		1- بستن`IP Service`ها✅
+		2- بستن`SSH`/`WinBox`از`VLAN`های غیرADMIN✅
+		3- تعریف`Src-NAT`بدون`CCTV VLAN`✅
+		4- تعریف`Simple Queue`برای`VLAN`ها✅
 			
 	* اقدامات **روتینگ**:
-		1. راه‌اندازی`EoIP Tunnel`بین`R1`و`R2`✅‼️(انجام شد ولی لغو کردم)
-		2. راه‌اندازی`Wiregurad`بین`R1`و`R3`✅‼️(انجام شد ولی لغو کردم)
-		3. راه‌اندازی`OSPF`روی`Wiregurad`و`EoIP Tunnel`✅❌(انجام شد ولی مشکل داشت)
+		1- راه‌اندازی`EoIP Tunnel`بین`R1`و`R2`✅‼️(انجام شد ولی لغو کردم)
+		2- راه‌اندازی`Wiregurad`بین`R1`و`R3`✅‼️(انجام شد ولی لغو کردم)
+		3- راه‌اندازی`OSPF`روی`Wiregurad`و`EoIP Tunnel`✅❌(انجام شد ولی مشکل داشت)
 		* راه‌اندازی`OSPF`بر بستر **سیم**ی (Wired)✅
 	
 	
@@ -53,27 +53,27 @@
 ## 🔹اقدامات و کانفیگ‌ها
 ### 🔸سوئیچ‌های`SW`
 ![SWs - VLANs & Access Ports](Sources/SWs%20-%20VLANs%20%26%20Access%20Ports.png)
-1. تعریف Portهای`Access`⬆️
+1- تعریف Portهای`Access`⬆️
 
 
 ![SWs - Mange VLAN & Trunk Port](Sources/SWs%20-%20Manage%20VLAN%20%26%20Trunk%20Port.png)
-2. ساخت `Mange VLAN`ها و تنظیم `Trunk Port`⬆️
+2- ساخت `Mange VLAN`ها و تنظیم `Trunk Port`⬆️
 
 
 ![[SWs - DHCP Snooping.png]]
-3. راه‌اندازی `DHCP Snooping`⬆️
+3- راه‌اندازی `DHCP Snooping`⬆️
 
 
 ![[SWs - SSH.png]]
-4. راه‌اندازی`SSH`⬆️
+4- راه‌اندازی`SSH`⬆️
 
 ### 🔸سوئیچ‌های`Core`
 ![[Cores - VLANs & Trunk Ports.png]]
-1. تعریف `VLAN`ها و تنظیم `Trunk Port`ها⬆️
+1- تعریف `VLAN`ها و تنظیم `Trunk Port`ها⬆️
 
 
 ![[Cores - Manage VLAN.png]]
-2. ساخت`Manage VLAN`⬆️ و بعدش⬇️
+2- ساخت`Manage VLAN`⬆️ و بعدش⬇️
 ```sh
 CoreX(config): vlan 9X
 CoreX(config-vlan): name Manage
@@ -82,67 +82,67 @@ CoreX(config-vlan): name Manage
 
 
 ![[Cores - DHCP Snooping.png]]
-3. راه‌اندازی`DHCP Snooping`⬆️
+3- راه‌اندازی`DHCP Snooping`⬆️
 
 
 ![[Cores - Port Security.png]]
-4. راه‌اندازی`Port Security`⬆️
+4- راه‌اندازی`Port Security`⬆️
 
 
 ![[Cores - SSH.png]]
-5. راه‌اندازی`SSH`⬆️
+5- راه‌اندازی`SSH`⬆️
 
 ### 🔸روترها
 ![[Routers - VLAN & IP Addresses.png]]
-1. تعریف`VLAN`ها و آدرس‌دهی⬆️
+1- تعریف`VLAN`ها و آدرس‌دهی⬆️
 
 
 ![[Routers - DHCP Servers.png]]
-2. راه‌اندازی`DHCP Server`برای هر`VLAN`⬆️
+2- راه‌اندازی`DHCP Server`برای هر`VLAN`⬆️
 
 
 ![[Routers - Default Route.png]]
-3. تنظیم`Default Route`⬆️
+3- تنظیم`Default Route`⬆️
 
 
 ###### 🔸🛑FAILD⬇️
 ![[Routers - EoIP Tunnel - R1 & R2.png]]
 ![[Routers - EoIP Tunnel - IP Addresses.png]]
-4. راه‌اندازی`EoIP Tunnel`بین`R1`و`R2`؛ و تنظیم`IP Address`روشون⬆️
+4- راه‌اندازی`EoIP Tunnel`بین`R1`و`R2`؛ و تنظیم`IP Address`روشون⬆️
 
 ###### 🔸🛑FAILD⬇️
 ![[Routers - WireGuard - R1 & R3.png]]
 ![[Routers - WireGuard - IP Addresses.png]]
-5. راه‌اندازی`Wireguard`بین`R1`و`R3`؛ و تنظیم`IP Address`روشون⬆️
+5- راه‌اندازی`Wireguard`بین`R1`و`R3`؛ و تنظیم`IP Address`روشون⬆️
 
 ###### 🔸🛑FAILD⬇️
 ![[Routers - OSPF - R1.png]]
 ![[Routers - OSPF - R2.png]]
 ![[Routers - OSPF - R3.png]]
-6. راه‌اندازی`OSPF`⬆️
+6- راه‌اندازی`OSPF`⬆️
 
 
 ###### 🔸✅INSTEAD of FAILDs⬇️
 ![[Routers - OSPF (Wired) - (1).png]]
 ![[Routers - OSPF (Wired) - (2).png]]
 ![[Routers - OSPF (Wired) - (3).png]]
-4. راه‌اندازی`OSPF`بر بستر Wired⬆️
+4.1- راه‌اندازی`OSPF`بر بستر Wired⬆️
 
 
 ![[Routers - Disable IP Services.png]]
-5. بستن`IP Service`ها⬆️
+5.1- بستن`IP Service`ها⬆️
 
 
 ![[Routers - Address List & Filter Rule.png]]
-6. تعریف`Address List`ها و تنظیم`Filter Rule`برای`SSH`/`Winbox`⬆️
+6.1- تعریف`Address List`ها و تنظیم`Filter Rule`برای`SSH`/`Winbox`⬆️
 
 
 ![[Routers - NAT (Except CCTV).png]]
-7. تعریف`Src-NAT`بدون`CCTV VLAN`⬆️
+7- تعریف`Src-NAT`بدون`CCTV VLAN`⬆️
 
 
 ![[Routers - Simple Queues.png]]
-8. تعریف`Simple Queue`ها⬆️
+8- تعریف`Simple Queue`ها⬆️
 >خیلی **کلی** تعریف کردم؛ چون`Simple Queue`برای کارهای خیلی زیاد ساخته **نشده**‼️
 
 
@@ -158,12 +158,12 @@ CoreX(config-vlan): name Manage
 
 
 ## 🔹مشکل
-1. **مشکل** اول بازم این بود که **کلاینت‌‌‌ها** IP نمیگرفتن و سر همینم نمیتونستم چیزی رو تست کنم🛑
+1- **مشکل** اول بازم این بود که **کلاینت‌‌‌ها** IP نمیگرفتن و سر همینم نمیتونستم چیزی رو تست کنم🛑
 	
 	* **راه‌حل**‌ش هم یکم **بررسی** بود و فهمیدم که `SW`ها **کانفیگ‌ها**شون میپره (با اینکه`wr`یا`copy run sta`میزدم!)؛ **دوباره** کانفیگ کردم✅
 	
 	
-2. **مشکل** دوم این بود`EoIP Tunnel`م و`WireGuard`م قطع و وصل میشدن و باعث میشد تا` OSPF`م هم قطع و وصل بشه؛ روی هم کلا روتینگ رو **خراب** میکردن🛑
+2- **مشکل** دوم این بود`EoIP Tunnel`م و`WireGuard`م قطع و وصل میشدن و باعث میشد تا` OSPF`م هم قطع و وصل بشه؛ روی هم کلا روتینگ رو **خراب** میکردن🛑
 	
 	* **نکته**‌ش این بود که با یک Tunnel دیگه (مثلا GRE) **تست** کنم؛ و بعد از تست **فهمیدم** که کلا`OSPF` روی بستر Tunnel داخل GNS3 این **مشکلات** رو داره‼️
 		
@@ -171,8 +171,7 @@ CoreX(config-vlan): name Manage
 
 
 ## 🔹نتیجه
----
+
 >سناریو **موفقیت‌آمیز** بود✅
 
 * *همراه با کلی دردسر و تجربیات جدید‼️*
----
