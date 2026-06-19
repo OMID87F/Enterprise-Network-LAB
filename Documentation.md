@@ -61,16 +61,20 @@
 2. ساخت `Mange VLAN`ها و تنظیم `Trunk Port`⬆️
 
 ![SWs - DHCP Snooping](Sources/SWs%20-%20DHCP%20Snooping.png)
+
 3. راه‌اندازی `DHCP Snooping`⬆️
 
 ![SWs - SSH](Sources/SWs%20-%20SSH.png)
+
 4. راه‌اندازی`SSH`⬆️
 
 ### 🔸سوئیچ‌های`Core`
 ![Cores - VLANs & Trunk Ports](Sources/Cores%20-%20VLANs%20%26%20Trunk%20Ports.png)
+
 1. تعریف `VLAN`ها و تنظیم `Trunk Port`ها⬆️
 
 ![Cores - Manage VLAN](Sources/Cores%20-%20Manage%20VLAN.png)
+
 2. ساخت`Manage VLAN`⬆️ و بعدش⬇️
 ```sh
 CoreX(config): vlan 9X
@@ -79,67 +83,84 @@ CoreX(config-vlan): name Manage
 >این باعث میشه تا **واقعا** VLAN9X رو داشته باشیم و **مشکل**ی پیش نیاد‼️ 
 
 ![Cores - DHCP Snooping](Sources/Cores%20-%20DHCP%20Snooping.png)
+
 3. راه‌اندازی`DHCP Snooping`⬆️
 
 ![Cores - Port Security](Sources/Cores%20-%20Port%20Security.png)
+
 4. راه‌اندازی`Port Security`⬆️
 
 ![Cores - SSH](Sources/Cores%20-%20SSH.png)
+
 5. راه‌اندازی`SSH`⬆️
 
 ### 🔸روترها
 ![Routers - VLAN & IP Addresses](Sources/Routers%20-%20VLAN%20%26%20IP%20Addresses.png)
+
 1. تعریف`VLAN`ها و آدرس‌دهی⬆️
 
 ![Routers - DHCP Servers](Sources/Routers%20-%20DHCP%20Servers.png)
+
 2. راه‌اندازی`DHCP Server`برای هر`VLAN`⬆️
 
 ![Routers - Default Route](Sources/Routers%20-%20Default%20Route.png)
+
 3. تنظیم`Default Route`⬆️
 
 ###### 🔸🛑FAILD⬇️
 ![Routers - EoIP Tunnel - R1 & R2](Sources/Routers%20-%20EoIP%20Tunnel%20-%20R1%20%26%20R2.png)
 ![Routers - EoIP Tunnel - IP Addresses](Sources/Routers%20-%20EoIP%20Tunnel%20-%20IP%20Addresses.png)
+
 4. راه‌اندازی`EoIP Tunnel`بین`R1`و`R2`؛ و تنظیم`IP Address`روشون⬆️
 
 ###### 🔸🛑FAILD⬇️
 ![Routers - WireGuard - R1 & R3](Sources/Routers%20-%20WireGuard%20-%20R1%20%26%20R3.png)
 ![Routers - WireGuard - IP Addresses](Sources/Routers%20-%20WireGuard%20-%20IP%20Addresses.png)
+
 5. راه‌اندازی`Wireguard`بین`R1`و`R3`؛ و تنظیم`IP Address`روشون⬆️
 
 ###### 🔸🛑FAILD⬇️
 ![Routers - OSPF - R1](Sources/Routers%20-%20OSPF%20-%20R1.png)
 ![Routers - OSPF - R2](Sources/Routers%20-%20OSPF%20-%20R2.png)
 ![Routers - OSPF - R3](Sources/Routers%20-%20OSPF%20-%20R3.png)
+
 6. راه‌اندازی`OSPF`⬆️
 
 ###### 🔸✅INSTEAD of FAILDs⬇️
 ![Routers - OSPF (Wired) - (1)](Sources/Routers%20-%20OSPF%20%28Wired%29%20-%20%281%29.png)
 ![Routers - OSPF (Wired) - (2)](Sources/Routers%20-%20OSPF%20%28Wired%29%20-%20%282%29.png)
 ![Routers - OSPF (Wired) - (3)](Sources/Routers%20-%20OSPF%20%28Wired%29%20-%20%283%29.png)
+
 4. راه‌اندازی`OSPF`بر بستر Wired⬆️
 
 ![Routers - Disable IP Services](Sources/Routers%20-%20Disable%20IP%20Services.png)
+
 5. بستن`IP Service`ها⬆️
 
 ![Routers - Address List & Filter Rule](Sources/Routers%20-%20Address%20List%20%26%20Filter%20Rule.png)
+
 5. تعریف`Address List`ها و تنظیم`Filter Rule`برای`SSH`/`Winbox`⬆️
 
 ![Routers - NAT (Except CCTV)](Sources/Routers%20-%20NAT%20%28Except%20CCTV%29.png)
+
 7. تعریف`Src-NAT`بدون`CCTV VLAN`⬆️
 
 ![Routers - Simple Queues](Sources/Routers%20-%20Simple%20Queues.png)
+
 8. تعریف`Simple Queue`ها⬆️
 >خیلی **کلی** تعریف کردم؛ چون`Simple Queue`برای کارهای خیلی زیاد ساخته **نشده**‼️
 
 ## 🔹راستی آزمایی
 ![Ping - Inter-VLAN Routing](Sources/Ping%20-%20Inter-VLAN%20Routing.png)
+
 * تست Inter-VLAN Routing با دستور`ping`⬆️
 
 ![Ping - OSPF](Sources/Ping%20-%20OSPF.png)
+
 * تست Routing با دستور`ping`⬆️
 
 ![Ping - Internet Access](Sources/Ping%20-%20Internet%20Access.png)
+
 * تست دسترسی به اینترنت با دستور`ping`⬆️
 
 ## 🔹مشکل
